@@ -1,7 +1,7 @@
 # Usage: docker run --restart=always -v /var/data/blockchain-xmr:/root/.bitmonero -p 18080:18080 -p 18081:18081 --name=monerod -td kannix/monero-full-node
 FROM ubuntu:20.04 AS build
 
-ENV MONERO_VERSION=0.18.4.0 MONERO_SHA256=e276f9e67396515f671a08c5438fb1db4358c9d8946ec7ef79b9dda552092ad7
+ENV MONERO_VERSION=0.18.4.0 MONERO_SHA256=16cb74c899922887827845a41d37c7f3121462792a540843f2fcabcc1603993f
 RUN apt-get update && apt-get install -y curl bzip2
 
 WORKDIR /root
